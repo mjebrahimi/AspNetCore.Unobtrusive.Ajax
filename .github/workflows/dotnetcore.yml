@@ -11,29 +11,32 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         
-      - name: Setup .NET Core SDK
+      - name: Setup .NET Core
         uses: actions/setup-dotnet@v1.6.0
         with:
             dotnet-version: '5.0.100-preview.8'
-  
-      - name: Build (Release)
-        run: dotnet build --configuration Release
 
+      - name: Install Dependencies
+        run: dotnet restore
+
+      - name: Build (Release)
+        run: dotnet build --configuration Release --no-restore
+        
       - name: Pack (Release)
-        run: |
-            dotnet pack src\AspNetCore.Unobtrusive.Ajax --configuration Release
+        run: dotnet pack src\AspNetCore.Unobtrusive.Ajax --configuration Release
             
-      - name: Publish
+      - name: Publish Nuget Package
         if: github.event_name == 'push'
         run: |      
-            if ( "${{github.ref}}" -match "^refs/tags/[0-9]+\.[0-9]+\.[0-9]+$" ) {
-                dotnet nuget push src\AspNetCore.Unobtrusive.Ajax\bin\Release\*.nupkg -s nuget.org -k ${{secrets.NUGET_TOKEN}} --no-symbols true
-            } else {
+            if [[ ${{github.ref}} =~ ^refs/tags/[0-9]+\.[0-9]+\.[0-9]+$ ]]
+            then
+                dotnet nuget push src/AspNetCore.Unobtrusive.Ajax/bin/Release/*.nupkg -s nuget.org -k ${{secrets.NUGET_TOKEN}} --no-symbols true
+            else
                 echo "publish is only enabled by tagging with a release tag"
-            }
+            fi
