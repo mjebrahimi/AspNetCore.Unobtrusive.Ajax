@@ -932,6 +932,11 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
         }
         #endregion
 
+        /// <summary>
+        /// Render The <script /> tag for jquery-unobtrusive-ajax based on configs (UseCdn or embedded - InjectScriptIfNeeded or always)
+        /// </summary>
+        /// <param name="htmlHelper">htmlHelper</param>
+        /// <returns>The <script /> tag for jquery-unobtrusive-ajax</returns>
         public static IHtmlContent RenderUnobtrusiveAjaxScript(this IHtmlHelper htmlHelper)
         {
             if (AjaxConfigurationExtensions.InjectScriptIfNeeded &&
@@ -942,7 +947,7 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
 
             var script = AjaxConfigurationExtensions.UseCdn ?
                 "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js\" integrity=\"sha512-DedNBWPF0hLGUPNbCYfj8qjlEnNE92Fqn7xd3Sscfu7ipy7Zu33unHdugqRD3c4Vj7/yLv+slqZhMls/4Oc7Zg==\" crossorigin=\"anonymous\"></script>" :
-                "<script src=\"/scripts/jquery.unobtrusive-ajax.min.js\"></script>";
+                "<script src=\"/scripts/jquery.unobtrusive-ajax.min.js\" integrity=\"sha512-DedNBWPF0hLGUPNbCYfj8qjlEnNE92Fqn7xd3Sscfu7ipy7Zu33unHdugqRD3c4Vj7/yLv+slqZhMls/4Oc7Zg==\" crossorigin=\"anonymous\"></script>";
 
             return new HtmlString(script);
         }

@@ -36,7 +36,6 @@ namespace AspNetCore.Unobtrusive.Ajax.Demo
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-
             app.UseStaticFiles();
             app.UseUnobtrusiveAjax();
 
