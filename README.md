@@ -5,7 +5,7 @@
 
 # AspNetCore.Unobtrusive.Ajax
 
-Unobtrusive Ajax Helpers (like MVC5 Ajax.BeignForm and Ajax.ActionLink) for ASP.NET Core.
+Unobtrusive Ajax Helpers (like MVC5 ***Ajax.BeignForm* and **Ajax.ActionLink**) for ASP.NET Core.
 
 ## Features
 
