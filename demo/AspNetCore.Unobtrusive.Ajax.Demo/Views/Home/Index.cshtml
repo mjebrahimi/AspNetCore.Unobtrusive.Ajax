@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "AspNetCore.Unobtrusive.Ajax";
+}
+
+<div class="text-center pb-5 pt-5">
+    <h1>AspNetCore.Unobtrusive.Ajax</h1>
+    <p>Unobtrusive Ajax Helpers (like MVC5 Ajax.BeignForm and Ajax.ActionLink) for ASP.NET Core</p>
+</div>
+
+<div class="text-center" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+    <p><strong>HttpPost</strong> Form</p>
+    @using (Html.AjaxBeginForm(new AjaxOptions
+    {
+        HttpMethod = "post"
+    }))
+    {
+        <div class="input-group">
+            @Html.TextBox("name", null, new { placeholder = "Type your name", @class = "form-control mx-sm-2" })
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    }
+    <br />
+    <br />
+    <p><strong>AjaxOnly</strong> Form</p>
+    @using (Html.AjaxBeginForm("AjaxMethod", new AjaxOptions
+    {
+        HttpMethod = "post"
+    }))
+    {
+        <div class="input-group">
+            @Html.TextBox("name", null, new { placeholder = "Type your name", @class = "form-control mx-sm-2" })
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    }
+    <br />
+    <br />
+    <p><strong>AntiForgeryTokenValidation</strong> Form</p>
+    @using (Html.AjaxBeginForm("AntiForgeryMethod", new AjaxOptions
+    {
+        HttpMethod = "post"
+    }))
+    {
+        <div class="input-group">
+            @Html.TextBox("name", null, new { placeholder = "Type your name", @class = "form-control mx-sm-2" })
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    }
+    <br />
+    <br />
+    <p><strong>Upload</strong> Form</p>
+    @using (Html.AjaxBeginForm("UploadFile", new AjaxOptions
+    {
+        HttpMethod = "post"
+    }, new { enctype = "multipart/form-data" }))
+    {
+        <div class="input-group">
+            <input type="file" name="file" class="form-control mx-sm-2" />
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    }
+</div>
+
