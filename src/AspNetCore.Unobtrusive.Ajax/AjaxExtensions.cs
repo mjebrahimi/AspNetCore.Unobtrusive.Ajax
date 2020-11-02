@@ -947,7 +947,7 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
 
             var script = AjaxConfigurationExtensions.UseCdn ?
                 "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js\" integrity=\"sha512-DedNBWPF0hLGUPNbCYfj8qjlEnNE92Fqn7xd3Sscfu7ipy7Zu33unHdugqRD3c4Vj7/yLv+slqZhMls/4Oc7Zg==\" crossorigin=\"anonymous\"></script>" :
-                "<script src=\"/scripts/jquery.unobtrusive-ajax.min.js\" integrity=\"sha512-DedNBWPF0hLGUPNbCYfj8qjlEnNE92Fqn7xd3Sscfu7ipy7Zu33unHdugqRD3c4Vj7/yLv+slqZhMls/4Oc7Zg==\" crossorigin=\"anonymous\"></script>";
+                "<script src=\"/scripts/jquery.unobtrusive-ajax.min.js\"></script>";
 
             return new HtmlString(script);
         }
