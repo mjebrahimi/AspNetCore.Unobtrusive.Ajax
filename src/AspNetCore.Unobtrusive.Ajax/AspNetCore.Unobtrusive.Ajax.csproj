@@ -39,21 +39,21 @@
 
   <ItemGroup Condition="'$(TargetFramework)'!='netcoreapp2.1' AND '$(TargetFramework)'!='netcoreapp2.2'">
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.3" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.2'">
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.3" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.1'">
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.3" />
   </ItemGroup>
 
   <ItemGroup>
