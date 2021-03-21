@@ -377,124 +377,124 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
 
         #region AjaxBeginForm
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(FormMethod.Post, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(actionName, null, FormMethod.Post, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(actionName, null, FormMethod.Post, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, object routeValues, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(actionName, null, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, object routeValues, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(actionName, null, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, RouteValueDictionary routeValues, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(actionName, null, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, RouteValueDictionary routeValues, AjaxOptions ajaxOptions, IDictionary<string, object> htmlAttributes)
         {
             return htmlHelper.BeginForm(actionName, null, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="controllerName">The name of the controller.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(actionName, controllerName, FormMethod.Post, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="controllerName">The name of the controller.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, object routeValues, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(actionName, controllerName, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
@@ -502,28 +502,28 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, object routeValues, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(actionName, controllerName, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="controllerName">The name of the controller.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, RouteValueDictionary routeValues, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(actionName, controllerName, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
@@ -531,7 +531,7 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, RouteValueDictionary routeValues, AjaxOptions ajaxOptions, IDictionary<string, object> htmlAttributes)
         {
             return htmlHelper.BeginForm(actionName, controllerName, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
@@ -539,163 +539,163 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
 
         #region Other overloads
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(FormMethod.Post, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, bool? antiforgery, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, bool? antiforgery, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="controllerName">The name of the controller.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(actionName, controllerName, FormMethod.Post, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="controllerName">The name of the controller.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, bool? antiforgery, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(actionName, controllerName, null, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="controllerName">The name of the controller.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, bool? antiforgery, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(actionName, controllerName, null, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, object routeValues, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(null, null, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, object routeValues, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(null, null, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, object routeValues, bool? antiforgery, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(null, null, routeValues, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, object routeValues, bool? antiforgery, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(null, null, routeValues, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="controllerName">The name of the controller.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, object routeValues, bool? antiforgery, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginForm(actionName, controllerName, routeValues, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response.
+        /// Writes an opening&lt;form&gt;tag to the response.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="actionName">The name of the action method that will handle the request.</param>
         /// <param name="controllerName">The name of the controller.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, object routeValues, bool? antiforgery, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginForm(actionName, controllerName, routeValues, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
@@ -706,66 +706,66 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
 
         #region AjaxBeginRouteForm
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginRouteForm(routeName, FormMethod.Post, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, object routeValues, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginRouteForm(routeName, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, object routeValues, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginRouteForm(routeName, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, RouteValueDictionary routeValues, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginRouteForm(routeName, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, RouteValueDictionary routeValues, AjaxOptions ajaxOptions, IDictionary<string, object> htmlAttributes)
         {
             return htmlHelper.BeginRouteForm(routeName, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
@@ -773,121 +773,122 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
 
         #region Other overloads
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, object routeValues, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginRouteForm(null, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, object routeValues, bool? antiforgery, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginRouteForm(null, routeValues, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginRouteForm(routeName, null, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening &lt;form&gt; tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening &lt;form&gt; tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, bool? antiforgery, AjaxOptions ajaxOptions)
         {
+            htmlHelper.AjaxBeginRouteForm(routeName, antiforgery, ajaxOptions);
             return htmlHelper.BeginRouteForm(routeName, null, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, object routeValues, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginRouteForm(null, routeValues, FormMethod.Post, null, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, object routeValues, bool? antiforgery, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginRouteForm(null, routeValues, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, bool? antiforgery, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginRouteForm(routeName, null, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, object routeValues, bool? antiforgery, AjaxOptions ajaxOptions)
         {
             return htmlHelper.BeginRouteForm(routeName, routeValues, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, null));
         }
 
         /// <summary>
-        /// Writes an opening <form> tag to the response using the specified routing information.
+        /// Writes an opening&lt;form&gt;tag to the response using the specified routing information.
         /// </summary>
         /// <param name="htmlHelper">The Html helper.</param>
         /// <param name="routeName">The name of the route to use to obtain the form post URL.</param>
         /// <param name="routeValues">An object that contains the parameters for a route.</param>
-        /// <param name="antiforgery">If true, <form> elements will include an antiforgery token. If false, suppresses the generation an <input> of type "hidden" with an antiforgery token.</param>
+        /// <param name="antiforgery">If true,&lt;form&gt;elements will include an antiforgery token. If false, suppresses the generation an &lt;input&gt; of type "hidden" with an antiforgery token.</param>
         /// <param name="ajaxOptions">An object that provides options for the asynchronous request.</param>
         /// <param name="htmlAttributes">An object that contains the HTML attributes to set for the element.</param>
-        /// <returns>An opening <form> tag.</returns>
+        /// <returns>An opening&lt;form&gt;tag.</returns>
         public static MvcForm AjaxBeginRouteForm(this IHtmlHelper htmlHelper, string routeName, object routeValues, bool? antiforgery, AjaxOptions ajaxOptions, object htmlAttributes)
         {
             return htmlHelper.BeginRouteForm(routeName, routeValues, FormMethod.Post, antiforgery, GetFormHtmlAttributes(htmlHelper, ajaxOptions, htmlAttributes));

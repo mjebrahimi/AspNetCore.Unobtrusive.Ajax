@@ -160,7 +160,7 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
             set { _url = value; }
         }
 
-        public bool AllowCache { get; set; }
+        //public bool AllowCache { get; set; }
 
         internal string ToJavascriptString()
         {
@@ -203,7 +203,7 @@ namespace Microsoft.AspNetCore.Mvc.Rendering
             AddToDictionaryIfSpecified(result, "data-ajax-failure", OnFailure);
             AddToDictionaryIfSpecified(result, "data-ajax-success", OnSuccess);
 
-            if (AllowCache)
+            if (true /*AllowCache*/)
             {
                 // On the client, the absence of the data-ajax-cache attribute is equivalent to setting it to false.
                 // Consequently we'll only set it if the user wants to opt into caching. 
