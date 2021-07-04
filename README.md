@@ -1,4 +1,4 @@
-[![NuGet](https://img.shields.io/nuget/v/AspNetCore.Unobtrusive.Ajax.svg)](https://www.nuget.org/packages/AspNetCore.Unobtrusive.Ajax)
+[![NuGet](https://buildstats.info/nuget/AspNetCore.Unobtrusive.Ajax)](https://www.nuget.org/packages/AspNetCore.Unobtrusive.Ajax)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax/workflows/.NET%20Core/badge.svg)](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax)
 
