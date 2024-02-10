@@ -1,7 +1,7 @@
-[![NuGet](https://buildstats.info/nuget/AspNetCore.Unobtrusive.Ajax)](https://www.nuget.org/packages/AspNetCore.Unobtrusive.Ajax)
+[![NuGet](https://img.shields.io/nuget/dt/AspNetCore.Unobtrusive.Ajax?style=flat&logo=nuget&cacheSeconds=1&label=Downloads)](https://www.nuget.org/packages/AspNetCore.Unobtrusive.Ajax)
+[![NuGet](https://img.shields.io/nuget/v/AspNetCore.Unobtrusive.Ajax?label=Version&cacheSeconds=1)](https://www.nuget.org/packages/AspNetCore.Unobtrusive.Ajax)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax/workflows/.NET%20Core/badge.svg)](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax)
-
 
 # AspNetCore.Unobtrusive.Ajax
 
@@ -11,11 +11,11 @@ Unobtrusive Ajax Helpers (like MVC5 **Ajax.BeignForm** and **Ajax.ActionLink**) 
 
 - Works with Upload file.
 - Works with `[AntiForgeryTokenValidation]`.
-- Has `[AjaxOnly]` attribute to limit actions.
-- Has `httpRequest.IsAjaxRequest()` extension method to check request is ajax and decide return PartialView or JSON result.
-- Additional overloads for ease of use.
-- Adds necessary JS script automatically when you use a Ajax Helpers and remove JS script when you no longer use it (Optional - is by default).
-- Uses CDN url instead of Embedded script (Optional - isn't by default).
+- Has `[AjaxOnly]` attribute to limit Ajax-only Actions.
+- Has `httpRequest.IsAjaxRequest()` extension method to check if the request is Ajax and decides to return PartialView or JSON result.
+- Additional overloads for Ease of Use.
+- Adds necessary JS script automatically when you use the Ajax Helpers and removes JS script when you no longer use it (Optional - is by default).
+- Can use CDN URL (for jQuery files) instead of Embedded script (Optional - not by default).
 
 ## Method Usages 
 
@@ -59,7 +59,7 @@ public void Configure(IApplicationBuilder app)
 ### 3. Add Script Tag in Layout.cshtml
 
 ```html
-    <!--Place it at the end of body and after jquery-->
+    <!--Place it at the end of the body and after jQuery -->
     @Html.RenderUnobtrusiveAjaxScript()
     <!-- Or you can reference your local script file -->
 
@@ -80,7 +80,6 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
-
 ## Demo
 
 Checkout [AspNetCore.Unobtrusive.Ajax.Demo](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax/tree/master/demo/AspNetCore.Unobtrusive.Ajax.Demo) for more samples.
@@ -90,7 +89,9 @@ Checkout [AspNetCore.Unobtrusive.Ajax.Demo](https://github.com/mjebrahimi/AspNet
 
 ## Contributing
 
-Create an [issue](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax/issues/new) if you find a BUG or have a Suggestion or Question. If you want to develop this project :
+Create an [issue](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax/issues/new) if you find a BUG or have a Suggestion or Question. 
+
+If you want to develop this project :
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -104,4 +105,4 @@ If you find this repository useful, please give it a star. Thanks!
 
 ## License
 
-AspNetCore.Unobtrusive.Ajax is Copyright © 2020 [Mohammd Javad Ebrahimi](https://github.com/mjebrahimi) under the [MIT License](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax/LICENSE).
+Copyright © 2020 [Mohammd Javad Ebrahimi](https://github.com/mjebrahimi) under the [MIT License](https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax/LICENSE).
