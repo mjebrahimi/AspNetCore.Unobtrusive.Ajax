@@ -19,12 +19,12 @@ Unobtrusive Ajax Helpers (like MVC5 **Ajax.BeignForm** and **Ajax.ActionLink**) 
 
 ## Method Usages 
 
-| Method |  MVC 5
-| ------------ |  -------
-| `Html.AjaxBeginForm` | instead of `Ajax.BeginForm`
+| Method                    |  MVC 5
+| ------------------------- | --------------------------------
+| `Html.AjaxBeginForm`      | instead of `Ajax.BeginForm`
 | `Html.AjaxBeginRouteForm` | instead of `Ajax.BeginRouteForm`
-| `Html.AjaxActionLink` | instead of `Ajax.ActionLink`
-| `Html.AjaxRouteLink` | instead of `Ajax.RouteLink`
+| `Html.AjaxActionLink`     | instead of `Ajax.ActionLink`
+| `Html.AjaxRouteLink`      | instead of `Ajax.RouteLink`
 
 ## Get Started
 
