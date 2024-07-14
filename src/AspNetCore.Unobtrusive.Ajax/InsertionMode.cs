@@ -1,28 +1,27 @@
-﻿namespace Microsoft.AspNetCore.Mvc.Rendering
+﻿namespace Microsoft.AspNetCore.Mvc.Rendering;
+
+/// <summary>
+/// Enumerates the AJAX script insertion modes.
+/// </summary>
+public enum InsertionMode
 {
     /// <summary>
-    /// Enumerates the AJAX script insertion modes.
+    /// Replace the contents of the element.
     /// </summary>
-    public enum InsertionMode
-    {
-        /// <summary>
-        /// Replace the contents of the element.
-        /// </summary>
-        Replace = 0,
+    Replace = 0,
 
-        /// <summary>
-        /// Insert before the element.
-        /// </summary>
-        InsertBefore = 1,
+    /// <summary>
+    /// Insert before the element.
+    /// </summary>
+    InsertBefore = 1,
 
-        /// <summary>
-        /// Insert after the element.
-        /// </summary>
-        InsertAfter = 2,
+    /// <summary>
+    /// Insert after the element.
+    /// </summary>
+    InsertAfter = 2,
 
-        /// <summary>
-        /// Replace the entire element.
-        /// </summary>
-        ReplaceWith = 3
-    }
+    /// <summary>
+    /// Replace the entire element.
+    /// </summary>
+    ReplaceWith = 3
 }
