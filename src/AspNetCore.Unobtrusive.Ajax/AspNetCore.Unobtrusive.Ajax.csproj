@@ -7,13 +7,14 @@
     <PackageId>AspNetCore.Unobtrusive.Ajax</PackageId>
     <Product>AspNetCore.Unobtrusive.Ajax</Product>
     <Title>AspNetCore.Unobtrusive.Ajax</Title>
-    <Version>3.1.0</Version>
-    <PackageVersion>3.1.0</PackageVersion>
-    <AssemblyVersion>3.1.0</AssemblyVersion>
+    <Version>3.2.0</Version>
+    <PackageVersion>3.2.0</PackageVersion>
+    <AssemblyVersion>3.2.0</AssemblyVersion>
     <Authors>Mohammad Javad Ebrahimi</Authors>
     <Company>Mohammad Javad Ebrahimi</Company>
     <Copyright>Copyright © Mohammad Javad Ebrahimi 2025</Copyright>
     <Description>Unobtrusive Ajax Helpers (like MVC5 Ajax.BeignForm and Ajax.ActionLink) for ASP.NET Core</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>jQuery Unobtrusive Ajax AspNetCore AspNetCoreMvc HtmlHelper ASP.NET MVC Core</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/mjebrahimi/AspNetCore.Unobtrusive.Ajax</PackageProjectUrl>
@@ -64,6 +65,7 @@
 
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="" />
+    <None Include="$(SolutionDir)\README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
